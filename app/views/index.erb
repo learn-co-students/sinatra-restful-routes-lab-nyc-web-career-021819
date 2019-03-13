@@ -1,0 +1,8 @@
+
+
+<h1>List of Recipes:</h1>
+
+<% @recipes.map do |recipe| %>
+<a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a>
+<a href="/recipes/<%= recipe.id %>/edit">Edit</a><br>
+<% end %>
