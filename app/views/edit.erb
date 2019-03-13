@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>edit</title>
+  </head>
+  <body>
+    <form action="/recipes/<%= @recipe.id %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+  <ul>
+    <p><li><label for="name">Recipe Name:</label></li>
+    <input id="name" type="text" name="recipe[name] value="<%=@recipe.name%>"">
+    </p>
+    <p><li><label for="ingredients">Ingredients:</label></li>
+    <input id="ingredients" type="text" name="recipe[ingredients]" value="<%=@recipe.ingredients%>">
+    </p>
+    <p><li><label for="cook_time">Total Cooking Time:</label></li>
+    <input id="cook_time" type="text" name="recipe[cook_time]" value="<%=@recipe.cook_time%>">
+    </p>
+  </ul>
+  <input type="submit" id="Submit">
+
+
+    </form>
+
+  </body>
+</html>
